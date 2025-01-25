@@ -1,0 +1,1 @@
+Erro 4004 personalizado!
