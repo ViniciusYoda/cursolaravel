@@ -12,8 +12,9 @@ class ProdutoController extends Controller
      */
     public function index()
     {
+        $produtos = Produto::paginate(3);
     
-        return view('site.home');
+        return view('site.home', compact('produtos'));
     }
 
     /**

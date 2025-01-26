@@ -1,8 +1,10 @@
 @extends('site.layout')
-@section('title', 'Essa é a home')
+@section('title', 'Categoria')
 
 @section('conteudo')
 <div class="row container">
+
+    <h3>Categoria</h3>
 
     @foreach ($produtos as $produto)
         <div class="col s12 m4">
