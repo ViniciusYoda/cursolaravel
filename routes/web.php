@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CarrinhoController;
 use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProdutoController;
@@ -12,5 +13,8 @@ Route::get('/produto/{slug}', [SiteController::class, 'details'])->name('site.de
 
 Route::get('/categoria/{id}', [SiteController::class, 'categoria'])->name('site.categoria');
 
+Route::get('/carrinho', [CarrinhoController::class, 'carrinhoLista'])->name('site.carrinho');
+
+Route::psot('/carrinho', [CarrinhoController::class, 'adicionaCarrinho'])->name('site.addcarrinho');
 
 
