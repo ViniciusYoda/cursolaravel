@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f4115d4ed3b95476214f1bcfa831826",
+    "content-hash": "772a85b97ee79d64021f36cbd6a167b6",
     "packages": [
         {
             "name": "brick/math",
@@ -134,6 +134,152 @@
                 }
             ],
             "time": "2023-12-11T17:09:12+00:00"
+        },
+        {
+            "name": "cocur/slugify",
+            "version": "v4.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cocur/slugify.git",
+                "reference": "1d674022e9cbefa80b4f51aa3e2375b6e3c14fdb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cocur/slugify/zipball/1d674022e9cbefa80b4f51aa3e2375b6e3c14fdb",
+                "reference": "1d674022e9cbefa80b4f51aa3e2375b6e3c14fdb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
+            },
+            "conflict": {
+                "symfony/config": "<3.4 || >=4,<4.3",
+                "symfony/dependency-injection": "<3.4 || >=4,<4.3",
+                "symfony/http-kernel": "<3.4 || >=4,<4.3",
+                "twig/twig": "<2.12.1"
+            },
+            "require-dev": {
+                "laravel/framework": "^5.0|^6.0|^7.0|^8.0",
+                "latte/latte": "~2.2",
+                "league/container": "^2.2.0",
+                "mikey179/vfsstream": "~1.6.8",
+                "mockery/mockery": "^1.3",
+                "nette/di": "~2.4",
+                "pimple/pimple": "~1.1",
+                "plumphp/plum": "~0.1",
+                "symfony/config": "^3.4 || ^4.3 || ^5.0 || ^6.0",
+                "symfony/dependency-injection": "^3.4 || ^4.3 || ^5.0 || ^6.0",
+                "symfony/http-kernel": "^3.4 || ^4.3 || ^5.0 || ^6.0",
+                "symfony/phpunit-bridge": "^5.4 || ^6.0",
+                "twig/twig": "^2.12.1 || ~3.0",
+                "zendframework/zend-modulemanager": "~2.2",
+                "zendframework/zend-servicemanager": "~2.2",
+                "zendframework/zend-view": "~2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cocur\\Slugify\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Eckerstorfer",
+                    "email": "florian@eckerstorfer.co",
+                    "homepage": "https://florian.ec"
+                },
+                {
+                    "name": "Ivo Bathke",
+                    "email": "ivo.bathke@gmail.com"
+                }
+            ],
+            "description": "Converts a string into a slug.",
+            "keywords": [
+                "slug",
+                "slugify"
+            ],
+            "support": {
+                "issues": "https://github.com/cocur/slugify/issues",
+                "source": "https://github.com/cocur/slugify/tree/v4.6.0"
+            },
+            "time": "2024-09-10T14:09:25+00:00"
+        },
+        {
+            "name": "cviebrock/eloquent-sluggable",
+            "version": "10.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cviebrock/eloquent-sluggable.git",
+                "reference": "92f456b10337ca97c1cccfcc853a1cf51d2cedd0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/92f456b10337ca97c1cccfcc853a1cf51d2cedd0",
+                "reference": "92f456b10337ca97c1cccfcc853a1cf51d2cedd0",
+                "shasum": ""
+            },
+            "require": {
+                "cocur/slugify": "^4.3",
+                "illuminate/config": "^10.0",
+                "illuminate/database": "^10.0",
+                "illuminate/support": "^10.0",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "limedeck/phpunit-detailed-printer": "^6.0",
+                "mockery/mockery": "^1.4.4",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "2.x-dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Cviebrock\\EloquentSluggable\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cviebrock\\EloquentSluggable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Colin Viebrock",
+                    "email": "colin@viebrock.ca"
+                }
+            ],
+            "description": "Easy creation of slugs for your Eloquent models in Laravel",
+            "homepage": "https://github.com/cviebrock/eloquent-sluggable",
+            "keywords": [
+                "eloquent",
+                "eloquent-sluggable",
+                "laravel",
+                "lumen",
+                "slug",
+                "sluggable"
+            ],
+            "support": {
+                "issues": "https://github.com/cviebrock/eloquent-sluggable/issues",
+                "source": "https://github.com/cviebrock/eloquent-sluggable/tree/10.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/cviebrock",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-02-16T23:01:35+00:00"
         },
         {
             "name": "darryldecode/cart",
@@ -1458,6 +1604,571 @@
             "time": "2023-12-03T19:50:20+00:00"
         },
         {
+            "name": "intervention/image",
+            "version": "2.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Intervention/image.git",
+                "reference": "04be355f8d6734c826045d02a1079ad658322dad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/04be355f8d6734c826045d02a1079ad658322dad",
+                "reference": "04be355f8d6734c826045d02a1079ad658322dad",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "guzzlehttp/psr7": "~1.1 || ^2.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.2",
+                "phpunit/phpunit": "^4.8 || ^5.7 || ^7.5.15"
+            },
+            "suggest": {
+                "ext-gd": "to use GD library based image processing.",
+                "ext-imagick": "to use Imagick based image processing.",
+                "intervention/imagecache": "Caching extension for the Intervention Image library"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Image": "Intervention\\Image\\Facades\\Image"
+                    },
+                    "providers": [
+                        "Intervention\\Image\\ImageServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Intervention\\Image\\": "src/Intervention/Image"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Vogel",
+                    "email": "oliver@intervention.io",
+                    "homepage": "https://intervention.io/"
+                }
+            ],
+            "description": "Image handling and manipulation library with support for Laravel integration",
+            "homepage": "http://image.intervention.io/",
+            "keywords": [
+                "gd",
+                "image",
+                "imagick",
+                "laravel",
+                "thumbnail",
+                "watermark"
+            ],
+            "support": {
+                "issues": "https://github.com/Intervention/image/issues",
+                "source": "https://github.com/Intervention/image/tree/2.7.2"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/interventionio",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/Intervention",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-05-21T17:30:32+00:00"
+        },
+        {
+            "name": "konekt/address",
+            "version": "2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/artkonekt/address.git",
+                "reference": "22a3aab117d8b99145ec5a714ffa32eb423f270e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/artkonekt/address/zipball/22a3aab117d8b99145ec5a714ffa32eb423f270e",
+                "reference": "22a3aab117d8b99145ec5a714ffa32eb423f270e",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "^2.13.3|^3.1.4",
+                "konekt/concord": "^1.10.1",
+                "konekt/enum": "^3.0|^4.0",
+                "konekt/enum-eloquent": "^1.8",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "ext-sqlite3": "*",
+                "mockery/mockery": "^1.1",
+                "orchestra/testbench": "^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "9 - 10"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "2.x": "2.7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Konekt\\Address\\": "src",
+                    "Konekt\\Address\\Seeds\\": "src/resources/database/seeds"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Attila Fulop",
+                    "homepage": "https://github.com/fulopattila122"
+                }
+            ],
+            "description": "Laravel module for handling countries, cities, addresses, people and organizations",
+            "support": {
+                "issues": "https://github.com/artkonekt/address",
+                "source": "https://github.com/artkonekt/address/tree/2.8.0"
+            },
+            "time": "2023-04-08T11:17:08+00:00"
+        },
+        {
+            "name": "konekt/concord",
+            "version": "1.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/artkonekt/concord.git",
+                "reference": "128b39d0d2baa5e7a869a5736652d0865db76318"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/artkonekt/concord/zipball/128b39d0d2baa5e7a869a5736652d0865db76318",
+                "reference": "128b39d0d2baa5e7a869a5736652d0865db76318",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^9.2|^10.0|^11.0",
+                "illuminate/support": "^9.2|^10.0|^11.0",
+                "konekt/enum": "^2.1|^3.0|^4.0",
+                "konekt/enum-eloquent": "^1.7",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^7.0|^8.0|^9.0",
+                "phpunit/phpunit": "9 - 10"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Helper": "Konekt\\Concord\\Facades\\Helper",
+                        "Concord": "Konekt\\Concord\\Facades\\Concord"
+                    },
+                    "providers": [
+                        "Konekt\\Concord\\ConcordServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Support/functions.php"
+                ],
+                "psr-4": {
+                    "Konekt\\Concord\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Attila Fulop",
+                    "homepage": "https://github.com/fulopattila122"
+                }
+            ],
+            "description": "Concord is a Laravel Extension for building modular Laravel Applications",
+            "support": {
+                "issues": "https://github.com/artkonekt/concord",
+                "source": "https://github.com/artkonekt/concord/tree/1.15.0"
+            },
+            "time": "2024-03-15T10:34:36+00:00"
+        },
+        {
+            "name": "konekt/customer",
+            "version": "2.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/artkonekt/customer.git",
+                "reference": "55654d4c1b657448f71931e08c719b5b111071df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/artkonekt/customer/zipball/55654d4c1b657448f71931e08c719b5b111071df",
+                "reference": "55654d4c1b657448f71931e08c719b5b111071df",
+                "shasum": ""
+            },
+            "require": {
+                "konekt/address": "^2.1.2",
+                "konekt/concord": "^1.10.2",
+                "konekt/enum": "^3.0|^4.0",
+                "konekt/user": "^2.1",
+                "laravel/framework": "^9.0|^10.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "ext-sqlite3": "*",
+                "mockery/mockery": "^1.1",
+                "orchestra/testbench": "^7.0|^8.0",
+                "phpunit/phpunit": "9 - 10"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Konekt\\Customer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Attila Fulop",
+                    "homepage": "https://github.com/fulopattila122"
+                }
+            ],
+            "description": "Customer handling library for Laravel (Concord module)",
+            "keywords": [
+                "concord",
+                "customer",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/artkonekt/customer",
+                "source": "https://github.com/artkonekt/customer/tree/2.4.1"
+            },
+            "time": "2023-12-17T12:43:19+00:00"
+        },
+        {
+            "name": "konekt/enum",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/artkonekt/enum.git",
+                "reference": "e3c723fc65e6c7bc901f022477a9e37f0f278bdb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/artkonekt/enum/zipball/e3c723fc65e6c7bc901f022477a9e37f0f278bdb",
+                "reference": "e3c723fc65e6c7bc901f022477a9e37f0f278bdb",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Konekt\\Enum\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Attila Fulop",
+                    "homepage": "https://github.com/fulopattila122"
+                }
+            ],
+            "description": "SPL inspired PHP enum class implementation",
+            "keywords": [
+                "artkonekt",
+                "enum",
+                "konekt"
+            ],
+            "support": {
+                "issues": "https://github.com/artkonekt/enum/issues",
+                "source": "https://github.com/artkonekt/enum"
+            },
+            "time": "2024-02-29T15:32:06+00:00"
+        },
+        {
+            "name": "konekt/enum-eloquent",
+            "version": "1.9.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/artkonekt/enum-eloquent.git",
+                "reference": "d0bd581772c0ca0a9577cf92f4bd35051543ba86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/artkonekt/enum-eloquent/zipball/d0bd581772c0ca0a9577cf92f4bd35051543ba86",
+                "reference": "d0bd581772c0ca0a9577cf92f4bd35051543ba86",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^8.75|9.*|10.*|11.*",
+                "konekt/enum": "^2.0.2 || ^3.0 | ^4.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "illuminate/events": "^8.75|9.*|10.*|11.*",
+                "phpunit/phpunit": "9 - 10"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Konekt\\Enum\\Eloquent\\EnumServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Konekt\\Enum\\Eloquent\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Attila Fulop",
+                    "homepage": "https://github.com/fulopattila122"
+                },
+                {
+                    "name": "Semyon Chetvertnyh",
+                    "homepage": "https://github.com/semyonchetvertnyh"
+                },
+                {
+                    "name": "Mark Boessenkool",
+                    "homepage": "https://github.com/TheM1984"
+                }
+            ],
+            "description": "Enum attribute casting for Eloquent models",
+            "keywords": [
+                "artkonekt",
+                "eloquent",
+                "enum",
+                "konekt",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/artkonekt/enum-eloquent/issues",
+                "source": "https://github.com/artkonekt/enum-eloquent"
+            },
+            "time": "2024-01-08T15:50:35+00:00"
+        },
+        {
+            "name": "konekt/laravel-migration-compatibility",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/artkonekt/laravel-migration-compatibility.git",
+                "reference": "d1e0ca0a5feaefab6928448bb5c7ca8e98997cf9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/artkonekt/laravel-migration-compatibility/zipball/d1e0ca0a5feaefab6928448bb5c7ca8e98997cf9",
+                "reference": "d1e0ca0a5feaefab6928448bb5c7ca8e98997cf9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "illuminate/database": "^10.0|^11.0",
+                "konekt/enum": "^2.1 | ^3.0 | ^4.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^8.0|^9.0",
+                "phpunit/phpunit": "^10.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Konekt\\LaravelMigrationCompatibility\\LaravelMigrationCompatibilityProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Konekt\\LaravelMigrationCompatibility\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Attila Fulop",
+                    "homepage": "https://github.com/fulopattila122"
+                }
+            ],
+            "description": "Library to help migrations to figure out whether a related field is int or bigInt",
+            "keywords": [
+                "artkonekt",
+                "database",
+                "konekt",
+                "laravel",
+                "migration"
+            ],
+            "support": {
+                "issues": "https://github.com/artkonekt/laravel-migration-compatibility/issues",
+                "source": "https://github.com/artkonekt/laravel-migration-compatibility"
+            },
+            "time": "2024-02-28T06:57:16+00:00"
+        },
+        {
+            "name": "konekt/search",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/artkonekt/search.git",
+                "reference": "9a53404aa825e4489ab97399aa7e86669c289bd3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/artkonekt/search/zipball/9a53404aa825e4489ab97399aa7e86669c289bd3",
+                "reference": "9a53404aa825e4489ab97399aa7e86669c289bd3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "laravel/framework": "^9.0|^10.0|^11.0",
+                "nesbot/carbon": "^2.66|^3.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.4.4",
+                "orchestra/testbench": "^7.0|^8.0|^9.0",
+                "phpunit/phpunit": "^9.5|^10.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Konekt\\Search\\Providers\\SearchServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Konekt\\Search\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pascal Baljet",
+                    "email": "pascal@protone.media",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Attila Fulop"
+                }
+            ],
+            "description": "Laravel package to search through multiple Eloquent models. Supports pagination, eager loading relations, single/multiple columns, sorting and scoped queries.",
+            "homepage": "https://github.com/artkonekt/search",
+            "keywords": [
+                "eloquent",
+                "konekt",
+                "laravel",
+                "protonemedia",
+                "search"
+            ],
+            "support": {
+                "source": "https://github.com/artkonekt/search/tree/1.4.0"
+            },
+            "time": "2024-04-25T14:50:38+00:00"
+        },
+        {
+            "name": "konekt/user",
+            "version": "2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/artkonekt/user.git",
+                "reference": "bfef9a509b5b062b72711cba0385fe01c394a0df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/artkonekt/user/zipball/bfef9a509b5b062b72711cba0385fe01c394a0df",
+                "reference": "bfef9a509b5b062b72711cba0385fe01c394a0df",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "^2.13.3|^3.1.4",
+                "ext-gd": "*",
+                "konekt/address": "^2.1.2",
+                "konekt/concord": "^1.10.2",
+                "konekt/enum": "^3.0|^4.0",
+                "konekt/laravel-migration-compatibility": "^1.4",
+                "laravel/framework": "^9.2|^10.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "laravel/legacy-factories": "^1.0.4",
+                "mockery/mockery": "^1.2",
+                "orchestra/testbench": "^7.0|^8.0",
+                "phpunit/phpunit": "9 - 10"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Konekt\\User\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Attila Fulop",
+                    "homepage": "https://github.com/fulopattila122"
+                }
+            ],
+            "description": "User handling module for Laravel applications",
+            "keywords": [
+                "concord",
+                "concord-module",
+                "laravel",
+                "user"
+            ],
+            "support": {
+                "issues": "https://github.com/artkonekt/user",
+                "source": "https://github.com/artkonekt/user/tree/2.8.0"
+            },
+            "time": "2023-12-17T12:55:27+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v10.48.25",
             "source": {
@@ -2237,6 +2948,71 @@
             "time": "2024-08-09T21:24:39+00:00"
         },
         {
+            "name": "league/glide",
+            "version": "2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/glide.git",
+                "reference": "62fc5ebd579e013e7573c00d1fb7e083ed395f00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/glide/zipball/62fc5ebd579e013e7573c00d1fb7e083ed395f00",
+                "reference": "62fc5ebd579e013e7573c00d1fb7e083ed395f00",
+                "shasum": ""
+            },
+            "require": {
+                "intervention/image": "^2.7",
+                "league/flysystem": "^2.0|^3.0",
+                "php": "^7.2|^8.0",
+                "psr/http-message": "^1.0|^2.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3.3",
+                "phpunit/php-token-stream": "^3.1|^4.0",
+                "phpunit/phpunit": "^8.5|^9.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\Glide\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Reinink",
+                    "email": "jonathan@reinink.ca",
+                    "homepage": "http://reinink.ca"
+                },
+                {
+                    "name": "Titouan Galopin",
+                    "email": "galopintitouan@gmail.com",
+                    "homepage": "https://titouangalopin.com"
+                }
+            ],
+            "description": "Wonderfully easy on-demand image manipulation library with an HTTP based API.",
+            "homepage": "http://glide.thephpleague.com",
+            "keywords": [
+                "ImageMagick",
+                "editing",
+                "gd",
+                "image",
+                "imagick",
+                "league",
+                "manipulation",
+                "processing"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/glide/issues",
+                "source": "https://github.com/thephpleague/glide/tree/2.3.1"
+            },
+            "time": "2024-12-17T05:40:16+00:00"
+        },
+        {
             "name": "league/mime-type-detection",
             "version": "1.16.0",
             "source": {
@@ -2291,6 +3067,83 @@
                 }
             ],
             "time": "2024-09-21T08:32:55+00:00"
+        },
+        {
+            "name": "maennchen/zipstream-php",
+            "version": "3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maennchen/ZipStream-PHP.git",
+                "reference": "6187e9cc4493da94b9b63eb2315821552015fca9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/6187e9cc4493da94b9b63eb2315821552015fca9",
+                "reference": "6187e9cc4493da94b9b63eb2315821552015fca9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-zlib": "*",
+                "php-64bit": "^8.1"
+            },
+            "require-dev": {
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.16",
+                "guzzlehttp/guzzle": "^7.5",
+                "mikey179/vfsstream": "^1.6",
+                "php-coveralls/php-coveralls": "^2.5",
+                "phpunit/phpunit": "^10.0",
+                "vimeo/psalm": "^5.0"
+            },
+            "suggest": {
+                "guzzlehttp/psr7": "^2.4",
+                "psr/http-message": "^2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ZipStream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Duncan",
+                    "email": "pabs@pablotron.org"
+                },
+                {
+                    "name": "Jonatan Männchen",
+                    "email": "jonatan@maennchen.ch"
+                },
+                {
+                    "name": "Jesse Donat",
+                    "email": "donatj@gmail.com"
+                },
+                {
+                    "name": "András Kolesár",
+                    "email": "kolesar@kolesar.hu"
+                }
+            ],
+            "description": "ZipStream is a library for dynamically streaming dynamic zip files from PHP without writing to the disk at all on the server.",
+            "keywords": [
+                "stream",
+                "zip"
+            ],
+            "support": {
+                "issues": "https://github.com/maennchen/ZipStream-PHP/issues",
+                "source": "https://github.com/maennchen/ZipStream-PHP/tree/3.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/maennchen",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-10-10T12:33:01+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3632,6 +4485,299 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
+        },
+        {
+            "name": "spatie/image",
+            "version": "2.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/image.git",
+                "reference": "2f802853aab017aa615224daae1588054b5ab20e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/image/zipball/2f802853aab017aa615224daae1588054b5ab20e",
+                "reference": "2f802853aab017aa615224daae1588054b5ab20e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-exif": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "league/glide": "^2.2.2",
+                "php": "^8.0",
+                "spatie/image-optimizer": "^1.7",
+                "spatie/temporary-directory": "^1.0|^2.0",
+                "symfony/process": "^3.0|^4.0|^5.0|^6.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^1.22",
+                "phpunit/phpunit": "^9.5",
+                "symfony/var-dumper": "^4.0|^5.0|^6.0",
+                "vimeo/psalm": "^4.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Image\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Manipulate images with an expressive API",
+            "homepage": "https://github.com/spatie/image",
+            "keywords": [
+                "image",
+                "spatie"
+            ],
+            "support": {
+                "source": "https://github.com/spatie/image/tree/2.2.7"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-07-24T13:54:13+00:00"
+        },
+        {
+            "name": "spatie/image-optimizer",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/image-optimizer.git",
+                "reference": "4fd22035e81d98fffced65a8c20d9ec4daa9671c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/image-optimizer/zipball/4fd22035e81d98fffced65a8c20d9ec4daa9671c",
+                "reference": "4fd22035e81d98fffced65a8c20d9ec4daa9671c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "php": "^7.3|^8.0",
+                "psr/log": "^1.0 | ^2.0 | ^3.0",
+                "symfony/process": "^4.2|^5.0|^6.0|^7.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^1.21",
+                "phpunit/phpunit": "^8.5.21|^9.4.4",
+                "symfony/var-dumper": "^4.2|^5.0|^6.0|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\ImageOptimizer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily optimize images using PHP",
+            "homepage": "https://github.com/spatie/image-optimizer",
+            "keywords": [
+                "image-optimizer",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/image-optimizer/issues",
+                "source": "https://github.com/spatie/image-optimizer/tree/1.8.0"
+            },
+            "time": "2024-11-04T08:24:54+00:00"
+        },
+        {
+            "name": "spatie/laravel-medialibrary",
+            "version": "10.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-medialibrary.git",
+                "reference": "f464c82357500c5c68ea350edff35ed9831fd48e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-medialibrary/zipball/f464c82357500c5c68ea350edff35ed9831fd48e",
+                "reference": "f464c82357500c5c68ea350edff35ed9831fd48e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-exif": "*",
+                "ext-fileinfo": "*",
+                "ext-json": "*",
+                "illuminate/bus": "^9.18|^10.0",
+                "illuminate/conditionable": "^9.18|^10.0",
+                "illuminate/console": "^9.18|^10.0",
+                "illuminate/database": "^9.18|^10.0",
+                "illuminate/pipeline": "^9.18|^10.0",
+                "illuminate/support": "^9.18|^10.0",
+                "maennchen/zipstream-php": "^2.0|^3.0",
+                "php": "^8.0",
+                "spatie/image": "^2.2.7",
+                "spatie/temporary-directory": "^2.0",
+                "symfony/console": "^6.0"
+            },
+            "conflict": {
+                "php-ffmpeg/php-ffmpeg": "<0.6.1"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^3.133.11",
+                "doctrine/dbal": "^2.13",
+                "ext-imagick": "*",
+                "ext-pdo_sqlite": "*",
+                "ext-zip": "*",
+                "guzzlehttp/guzzle": "^7.4",
+                "league/flysystem-aws-s3-v3": "^3.0",
+                "mockery/mockery": "^1.4",
+                "nunomaduro/larastan": "^2.0",
+                "orchestra/testbench": "^7.0|^8.0",
+                "pestphp/pest": "^1.21",
+                "phpstan/extension-installer": "^1.1",
+                "spatie/laravel-ray": "^1.28",
+                "spatie/pdf-to-image": "^2.1",
+                "spatie/phpunit-snapshot-assertions": "^4.2"
+            },
+            "suggest": {
+                "league/flysystem-aws-s3-v3": "Required to use AWS S3 file storage",
+                "php-ffmpeg/php-ffmpeg": "Required for generating video thumbnails",
+                "spatie/pdf-to-image": "Required for generating thumbnails of PDFs and SVGs"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\MediaLibrary\\MediaLibraryServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\MediaLibrary\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Associate files with Eloquent models",
+            "homepage": "https://github.com/spatie/laravel-medialibrary",
+            "keywords": [
+                "cms",
+                "conversion",
+                "downloads",
+                "images",
+                "laravel",
+                "laravel-medialibrary",
+                "media",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-medialibrary/issues",
+                "source": "https://github.com/spatie/laravel-medialibrary/tree/10.15.0"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-11-03T13:09:19+00:00"
+        },
+        {
+            "name": "spatie/temporary-directory",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/temporary-directory.git",
+                "reference": "580eddfe9a0a41a902cac6eeb8f066b42e65a32b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/temporary-directory/zipball/580eddfe9a0a41a902cac6eeb8f066b42e65a32b",
+                "reference": "580eddfe9a0a41a902cac6eeb8f066b42e65a32b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\TemporaryDirectory\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Vanderbist",
+                    "email": "alex@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Easily create, use and destroy temporary directories",
+            "homepage": "https://github.com/spatie/temporary-directory",
+            "keywords": [
+                "php",
+                "spatie",
+                "temporary-directory"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/temporary-directory/issues",
+                "source": "https://github.com/spatie/temporary-directory/tree/2.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-01-13T13:04:43+00:00"
         },
         {
             "name": "symfony/console",
@@ -5845,6 +6991,97 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/v2.3.0"
             },
             "time": "2024-12-21T16:25:41+00:00"
+        },
+        {
+            "name": "vanilo/framework",
+            "version": "3.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vanilophp/framework.git",
+                "reference": "d5f9a81ad92bf0cce9ccc8a6c7ad0e3c5ebbaf94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vanilophp/framework/zipball/d5f9a81ad92bf0cce9ccc8a6c7ad0e3c5ebbaf94",
+                "reference": "d5f9a81ad92bf0cce9ccc8a6c7ad0e3c5ebbaf94",
+                "shasum": ""
+            },
+            "require": {
+                "cviebrock/eloquent-sluggable": "^9.0|^10.0",
+                "doctrine/dbal": "^2.13.3|^3.1.4",
+                "ext-json": "*",
+                "ext-pdo": "*",
+                "konekt/address": "^2.7.1",
+                "konekt/concord": "^1.12",
+                "konekt/customer": "^2.3.1",
+                "konekt/enum": "^3.1.1|^4.0",
+                "konekt/laravel-migration-compatibility": "^1.5",
+                "konekt/search": "^1.2",
+                "konekt/user": "^2.4",
+                "laravel/framework": "^9.2|^10.0",
+                "php": "^8.0",
+                "spatie/laravel-medialibrary": "^10.0"
+            },
+            "replace": {
+                "vanilo/cart": "^2.2 | ^3.0",
+                "vanilo/category": "^2.2 | ^3.0",
+                "vanilo/channel": "^2.2 | ^3.0",
+                "vanilo/checkout": "^2.2 | ^3.0",
+                "vanilo/contracts": "^2.2 | ^3.0",
+                "vanilo/order": "^2.2 | ^3.0",
+                "vanilo/payment": "^2.2 | ^3.0",
+                "vanilo/product": "^2.2 | ^3.0",
+                "vanilo/properties": "^2.2 | ^3.0",
+                "vanilo/support": "^2.2 | ^3.0"
+            },
+            "require-dev": {
+                "laravel/legacy-factories": "^1.0.4",
+                "orchestra/testbench": "^7.0|^8.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Cart": "Vanilo\\Cart\\Facades\\Cart"
+                    }
+                },
+                "branch-alias": {
+                    "dev-master": "3.8.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Links/Support/helpers.php",
+                    "src/Foundation/Support/helpers.php",
+                    "src/Foundation/Support/v2_compatibility.php"
+                ],
+                "psr-4": {
+                    "Vanilo\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Attila Fulop",
+                    "homepage": "https://github.com/fulopattila122"
+                }
+            ],
+            "description": "E-commerce Framework for Laravel",
+            "support": {
+                "issues": "https://github.com/vanilophp/framework/issues",
+                "source": "https://github.com/vanilophp/framework/tree/3.8.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/fulopattila122",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-11-17T12:07:35+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

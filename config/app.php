@@ -183,7 +183,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        'Cart' => Darryldecode\Cart\Facades\CartFacade::class
+        'Cart' => Darryldecode\Cart\Facades\CartFacade::class,
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
