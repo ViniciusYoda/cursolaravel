@@ -163,7 +163,8 @@ return [
         /*
          * Application Service Providers...
          */
-        Darryldecode\Cart\CartServiceProvider::class,
+        Vanilo\Framework\Providers\VaniloServiceProvider::class,
+
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
@@ -183,7 +184,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        'Cart' => Darryldecode\Cart\Facades\CartFacade::class,
+        'Cart' => Vanilo\Cart\Facades\Cart::class,
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
