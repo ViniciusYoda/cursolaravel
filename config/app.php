@@ -163,7 +163,7 @@ return [
         /*
          * Application Service Providers...
          */
-        Vanilo\Framework\Providers\VaniloServiceProvider::class,
+        // Vanilo\Framework\Providers\VaniloServiceProvider::class,
 
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
