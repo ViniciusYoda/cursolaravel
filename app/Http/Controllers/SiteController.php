@@ -7,6 +7,8 @@ use App\Models\Produto;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Gate;
+
 class SiteController extends Controller
 {
     public function index()
@@ -19,7 +21,10 @@ class SiteController extends Controller
     public function details(string $slug)
     {
         $produto = Produto::where('slug', $slug)->first();
-    
+
+        // Gate::authorize('ver-produto', $produto);
+        $this->authorize('verProduto', $produto);
+
         return view('site.details', compact('produto'));
     }
 
