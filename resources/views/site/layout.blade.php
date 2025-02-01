@@ -27,7 +27,7 @@
       <ul id="nav-mobile" class="left">
         <li><a href="{{ route('site.index' ) }}">Home</a></li>
         <li><a href="" class="dropdown-trigger" data-target='dropdown1'>Categorias <i class="material-icons right">expand_more</i></a></li>
-        <li><a href="{{ route('site.carrinho') }}">Carrinho <span class="badge blue" data-badge-caption">{{ \Vanilo\Cart\Facades\Cart::itemCount() }}</span></a></li>
+        <li><a href="{{ route('site.carrinho') }}">Carrinho <span class="badge blue" data-badge-caption>{{Cart::itemCount() }}</span></a></li>
 
       </ul>
 
